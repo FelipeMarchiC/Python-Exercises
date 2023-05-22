@@ -1,0 +1,7 @@
+segundos_totais = int(input())
+
+dias = segundos_totais // (24 * 3600)
+horas = (segundos_totais % (24 * 3600)) // 3600
+minutos = ((segundos_totais % (24 * 3600)) % 3600) // 60
+segundos = ((segundos_totais % (24 * 3600)) % 3600) % 60
+print(dias, horas, minutos, segundos)
