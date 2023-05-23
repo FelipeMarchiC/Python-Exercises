@@ -1,0 +1,11 @@
+A = int(input())
+B = int(input())
+
+contador = B + 1
+potencia = 1 
+
+while contador > 1:
+  potencia = potencia * A
+  contador = contador - 1
+
+print(potencia)
