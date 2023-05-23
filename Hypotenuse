@@ -1,0 +1,4 @@
+cateto_adjacente = float(input())
+cateto_oposto = float(input())
+hipotenusa = ((cateto_adjacente ** 2) + (cateto_oposto ** 2)) ** 0.5
+print(f"{hipotenusa:.2f}")
