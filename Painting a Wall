@@ -1,0 +1,13 @@
+import math
+largura_parede = float(input())
+altura_parede = float(input())
+custo_tinta = float(input())
+rendimento_tinta = float(input())
+
+metros_quadrados = largura_parede * altura_parede
+latas_necessarias = metros_quadrados / rendimento_tinta
+latas_necessarias = math.ceil(latas_necessarias)
+custo_total = latas_necessarias * custo_tinta
+
+print(f"{int(latas_necessarias)}")
+print(f"{custo_total:.2f}")
