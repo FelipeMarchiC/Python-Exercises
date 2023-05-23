@@ -1,0 +1,6 @@
+valor_total = float(input())
+desconto = float(input())
+porcentagem = desconto / 100
+desconto_final = 1 - porcentagem
+valor_compra = valor_total * desconto_final
+print(f"{valor_compra:.2f}")
