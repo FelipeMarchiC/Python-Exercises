@@ -1,0 +1,32 @@
+a = int(input())
+b = int(input())
+c = int(input())
+if c > a and a >= b:
+  x = a
+  a = b
+  b = x
+
+if b > a and a >= c:
+  x = b
+  b = a
+  a = c
+  c = x
+ 
+elif a == c:
+  x = a
+  a = b
+  b = c
+  c = x
+  
+elif b == c:
+ c = a
+ a = b
+ 
+elif b > c:
+ x = b
+ b = c
+ c = x
+
+print(a)
+print(b)
+print(c)
