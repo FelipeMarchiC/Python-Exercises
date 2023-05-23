@@ -1,0 +1,15 @@
+soma_par = 0
+soma_impar = 0
+x = 1
+
+while x != 0:
+    x = int(input())
+    if x % 2 == 0:
+        soma_par += x
+    else:
+        soma_impar += x
+ 
+print(soma_par)
+print(soma_impar)
+
+print(soma_par + soma_impar)
