@@ -1,0 +1,5 @@
+salario = float(input())
+vendas = float(input())
+comissao = vendas * 0.18
+salario_total = salario + comissao
+print(f"{salario_total:.2f}")
