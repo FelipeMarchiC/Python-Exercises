@@ -1,0 +1,9 @@
+numero = int(input())
+harmonico = 0
+
+while numero > 0:
+  h = 1/numero
+  numero = numero - 1
+  harmonico += h
+
+print(f"{harmonico:.4f}")
