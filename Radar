@@ -1,0 +1,11 @@
+limite = int(input())
+multa = float(input())
+taxa_extra = float(input())
+velocidade = int(input())
+
+if velocidade > limite:
+  extra = (velocidade - limite) * taxa_extra
+  multa = multa + extra
+  print(f"{multa:.2f}")
+else:
+  print("0.00")
