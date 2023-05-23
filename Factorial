@@ -1,0 +1,9 @@
+N = int(input())
+fatorial = 1
+
+numero = 1
+while numero < N + 1:
+  fatorial *= numero
+  numero += 1
+  
+print(fatorial)
