@@ -1,0 +1,6 @@
+N = int(input())
+x = 1
+
+while N >= x:
+  print(x)
+  x += 1
