@@ -1,0 +1,16 @@
+eleitores = int(input())
+v_brancos = int(input())
+v_nulos = int(input())
+v_validos = int(input())
+
+ausentes = eleitores - v_brancos - v_nulos - v_validos
+
+ausentes = ausentes / eleitores * 100
+v_brancos = v_brancos / eleitores * 100
+v_nulos = v_nulos / eleitores * 100
+v_validos = v_validos / eleitores * 100
+
+print(f"Nulos: {v_nulos:.2f}%")
+print(f"Brancos: {v_brancos:.2f}%")
+print(f"Validos: {v_validos:.2f}%")
+print(f"Ausentes: {ausentes:.2f}%")
