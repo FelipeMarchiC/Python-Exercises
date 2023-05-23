@@ -1,0 +1,3 @@
+celsius = float(input())
+fahren = 1.8 * celsius + 32
+print(f"{fahren:.2f}")
