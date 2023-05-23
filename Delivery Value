@@ -1,0 +1,11 @@
+viagem_valor1_limite = float(input())
+valor1 = float(input())
+valor2 = float(input())
+quilometros = float(input())
+
+if viagem_valor1_limite > quilometros:
+  print(f"{(valor1 * quilometros):.2f}")
+elif viagem_valor1_limite == quilometros:
+  print(f"{(valor1 * quilometros):.2f}")
+else:
+  print(f"{(valor2 * quilometros):.2f}")
