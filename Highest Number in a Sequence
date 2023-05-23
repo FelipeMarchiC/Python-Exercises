@@ -1,0 +1,14 @@
+contagem = int(input())
+contador = 1
+
+while True:
+  x = int(input())
+  if contador > 0:
+    y = x
+    contador = contador - 1
+  if x > y:
+    y = x
+  if contagem == 1:
+    print(y)
+    break
+  contagem = contagem - 1
