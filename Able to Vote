@@ -1,0 +1,8 @@
+eleitor_idade = int(input())
+
+if eleitor_idade >= 70 or eleitor_idade < 16:
+  print("DISPENSADO")
+elif eleitor_idade >= 16 and 17 >= eleitor_idade:
+  print("FACULTATIVO")
+else:
+  print("OBRIGATORIO")
