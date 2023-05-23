@@ -1,0 +1,10 @@
+N = int(input())
+M = int(input())
+
+soma = 0
+
+while M >= N:
+  soma += N
+  N += 1
+
+print(soma)
