@@ -1,0 +1,7 @@
+numero = int(input())
+unidade = numero % 10
+dezena = (numero // 10) % 10
+centena = (numero // 100) % 10
+milhar = (numero // 1000) % 10
+invertido = milhar + centena * 10 + dezena * 100 + unidade * 1000
+print(invertido)
