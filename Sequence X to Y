@@ -1,0 +1,10 @@
+X = int(input())
+Y = int(input())
+
+if X > Y:
+  (print("INVALIDO"))
+
+else:
+  while Y >= X:
+    print(X)
+    X += 1
