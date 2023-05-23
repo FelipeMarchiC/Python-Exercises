@@ -1,0 +1,11 @@
+N = int(input())
+contador = 0 
+atual = 1
+proximo = 0
+
+while contador < N:
+  print(atual, end=" ")
+  fibonacci = atual
+  atual = atual + proximo
+  proximo = fibonacci
+  contador = contador + 1
