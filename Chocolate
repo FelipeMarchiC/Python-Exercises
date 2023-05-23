@@ -1,0 +1,12 @@
+N = float(input())
+C = float(input())
+M = int(input())
+
+chocolate = N // C
+embalagem = chocolate
+
+while embalagem >= M:
+  chocolate += embalagem // M
+  embalagem = embalagem // M + embalagem % M
+
+print(f"{chocolate:.0f}")
