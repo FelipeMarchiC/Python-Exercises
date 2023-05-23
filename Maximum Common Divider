@@ -1,0 +1,9 @@
+numero_a = int(input())
+numero_b = int(input())
+
+while (numero_b != 0):
+  resto = numero_a % numero_b
+  numero_a = numero_b
+  numero_b = resto
+  if numero_b == 0:
+    print(numero_a)
