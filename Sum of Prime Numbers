@@ -1,0 +1,21 @@
+numero_inteiro = int(input())
+x = 0
+y = 1
+soma = 0
+
+if numero_inteiro >= 2:
+  soma = 2
+
+while numero_inteiro >= x:
+ while x >= y and x % y != 0:
+   y += 1
+   if x == y:
+     soma += x 
+     break
+ x += 1
+ y = 2
+
+if numero_inteiro == 0:
+  print(0)
+else:
+  print(soma)
