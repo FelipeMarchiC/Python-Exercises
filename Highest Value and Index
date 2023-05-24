@@ -1,0 +1,20 @@
+N = int(input())
+numeros = input()
+lista_dos_numeros = numeros.split()
+
+i = 0
+while i < N:
+  lista_dos_numeros[i] = int(lista_dos_numeros[i])
+  i += 1
+
+maior_valor = lista_dos_numeros[0] - 1
+posicao_na_lista = 0
+
+i = 0
+while i < N:
+  if lista_dos_numeros[i] > maior_valor:
+    maior_valor = lista_dos_numeros[i]
+    posicao_na_lista = i
+  i += 1
+print(maior_valor)
+print(posicao_na_lista)
