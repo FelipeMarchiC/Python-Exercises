@@ -1,0 +1,17 @@
+anos = int(input())
+
+contador = anos
+velas = 0
+maior_vela = 0
+quantia = 0
+
+while contador > 0:
+  velas = int(input())
+  if velas >= maior_vela:
+    if velas > maior_vela:
+      quantia = 0
+    maior_vela = velas
+    quantia += 1
+  contador -= 1
+
+print(quantia)
