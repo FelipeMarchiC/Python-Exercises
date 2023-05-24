@@ -1,0 +1,21 @@
+N = int(input())
+
+lista_numeros = []
+lista_numeros = input()
+lista_numeros = list(map(int, lista_numeros.split()))
+
+a = 0
+b = 0
+
+i = 0
+while i < (N // 2):
+  b = lista_numeros[a]
+  lista_numeros[a] = lista_numeros[a + 1]
+  lista_numeros[a + 1] = b
+  a += 2
+  i += 1
+
+i = 0
+while i < N:
+  print(lista_numeros[i], end=' ')
+  i += 1
