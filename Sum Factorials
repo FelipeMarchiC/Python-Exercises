@@ -1,0 +1,21 @@
+N = int(input())
+
+fatorial = 1
+soma = 0
+
+x = N
+y = 1
+z = N
+  
+while z >= 0:
+  while y < x + 1:
+    fatorial *= y
+    y += 1
+  soma += fatorial
+  fatorial = 1
+  y = 1
+  if N >= x:
+    x = x - 1
+  z -= 1
+  
+print(soma)
