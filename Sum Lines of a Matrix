@@ -1,0 +1,19 @@
+N = list(map(int,input().split()))
+M = list(map(int,input().split()))
+
+matriz = []
+k = 0
+
+for i in range(N[0]):
+  linha = []
+  for j in range(N[1]):
+    elemento = M[k]
+    k += 1
+    linha.append(elemento)
+  matriz.append(linha)
+
+for i in range(N[0]):
+  soma_linha = 0
+  for j in range(N[1]):
+    soma_linha += matriz[i][j]
+  print(soma_linha)
