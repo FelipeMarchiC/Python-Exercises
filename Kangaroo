@@ -1,0 +1,13 @@
+posicao1 = int(input())
+pulo1 = int(input())
+posicao2 = int(input())
+pulo2 = int(input())
+
+if (posicao2 > posicao1 and pulo1 > pulo2 and (posicao2 - posicao1) % (pulo2 - pulo1) == 0) or (posicao1 > posicao2 and pulo2 > pulo1 and (posicao1 - posicao2) % (pulo1 - pulo2) == 0):
+  print("SIM")
+  
+elif posicao1 == posicao2:
+  print("SIM")
+
+else:
+  print("NAO")
