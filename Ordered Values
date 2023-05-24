@@ -1,0 +1,30 @@
+numeros = int(input())
+
+numero = 0
+validador = 0
+validador2 = 0
+validador3 = 0
+contador = numeros
+
+while contador > 0:
+  numero = int(input())
+  if contador == numeros:
+    x = numero
+    y = numero
+  if numero >= x:
+    x = numero
+    validador2 += 1
+
+  if y >= numero:
+    y = numero
+    validador3 += 1
+  validador += 1
+  contador -= 1
+
+if validador != validador2 and validador != validador3:
+  print(0)
+elif validador2 == validador:
+  print(1)
+else:
+  print(-1)
+  
