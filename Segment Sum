@@ -1,0 +1,25 @@
+N = int(input())
+lista_numeros = list(map(int, input().split()))
+indices = list(map(int, input().split()))
+
+if (indices[0] >= N or indices[1] >= N) or (indices[0] < 0 or indices[1] < 0):
+  print("INVALIDO")
+else:
+  soma = 0
+  if indices[0] > indices[1]:
+    distancia = indices[0] - indices[1] + 1
+    
+    i = 0
+    while i < distancia:
+      soma += lista_numeros[indices[1] + i]
+      i += 1
+      
+  else:
+    distancia = indices[1] - indices[0] + 1
+    
+    i = 0
+    while i < distancia:
+      soma += lista_numeros[indices[0] + i]
+      i += 1
+    
+  print(soma)
