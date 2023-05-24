@@ -1,0 +1,5 @@
+def triple_sum(m, n, o):
+  return(m + n + o)
+
+n = list(map(float, input().split()))
+print(f"{triple_sum(n[0], n[1], n[2]):.2f}")
