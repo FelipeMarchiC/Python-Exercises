@@ -1,0 +1,26 @@
+N = int(input())
+lista_numeros = list(map(int, input().split()))
+lista_A = []
+lista_B = []
+
+i = 0
+while i < N:
+  if lista_numeros[i] % 2 == 0:
+    lista_A.append(lista_numeros[i])
+    
+  else:
+    lista_B.append(lista_numeros[i])
+  i += 1
+
+i = 0
+while i < len(lista_A):
+  print(lista_A[i], end=' ')
+  i += 1
+
+print()
+
+i = 0
+while i < len(lista_B):
+  print(lista_B[i], end=' ')
+  i += 1
+print()
