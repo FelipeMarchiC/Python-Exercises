@@ -1,0 +1,10 @@
+N = int(input())
+
+lista_numeros = []
+lista_numeros = input()
+lista_numeros = list(map(int, lista_numeros.split()))
+
+i = 0
+while i < N:
+  print(lista_numeros[N - 1 - i], end=' ')
+  i += 1
