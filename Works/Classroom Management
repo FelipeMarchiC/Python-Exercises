@@ -1,0 +1,55 @@
+numero_de_alunos = int(input("Alunos cadastrados na disciplina: "))
+quantia_de_trabalhos = int(input("Quantia de trabalhos passados: "))
+print("=========================")
+
+MP = 0
+MF = 0
+media_classe = 0
+alunos_apv = 0
+alunos_rec = 0
+alunos_rpv = 0
+
+i = 0
+while i < numero_de_alunos:
+  nota_prova1 = float(input("Informe a nota da primeira prova: "))
+  nota_prova2 = float(input("Informe a nota da segunda prova: "))
+  PS = float(input("Informe a nota da substitutiva: "))
+
+  if PS >= 0:
+    if nota_prova1 > nota_prova2:
+      MP = (nota_prova1 + PS) / 2 * 0.6
+    else:
+      MP = (nota_prova2 + PS) / 2 * 0.6
+  else:
+    MP = (nota_prova1 + nota_prova2) / 2 * 0.6
+      
+  MT = 0
+  j = 0
+  while j < quantia_de_trabalhos:
+    nota_trabalho = float(input(f"Informe a nota do trabalho {j + 1}: "))
+    MT += nota_trabalho
+    j += 1
+  MT = (MT / quantia_de_trabalhos) * 0.4
+  
+  MF = MP + MT
+  if MF < 4:
+    print(f"Nota do Aluno {i + 1}: {MF:.2f} - Reprovado!")
+    alunos_rpv += 1
+    
+  elif MF < 6:
+    print(f"Nota do Aluno {i + 1}: {MF:.2f} - Recuperação!")
+    alunos_rec += 1
+    
+  else:
+    print(f"Nota do Aluno {i + 1}: {MF:.2f} - Aprovado!")
+    alunos_apv += 1
+  
+  print("=========================")
+  media_classe += MF / numero_de_alunos
+    
+  i += 1
+
+print(f"Alunos aprovados: {alunos_apv}")
+print(f"Alunos de recuperação: {alunos_rec}")
+print(f"Alunos reprovados: {alunos_rpv}")
+print(f"Media da Classe: {media_classe:.2f}")
