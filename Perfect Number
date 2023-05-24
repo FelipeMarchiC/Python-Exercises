@@ -1,0 +1,15 @@
+numero = int(input())
+contador = numero - 1
+testagem = 1
+somagem = 0
+
+while contador > 0:
+  if numero % testagem == 0:
+    somagem += testagem
+  testagem += 1
+  contador -= 1
+
+if somagem == numero:
+  print("S")
+else:
+  print("N")
