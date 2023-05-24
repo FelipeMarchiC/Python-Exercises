@@ -1,0 +1,18 @@
+leitura_de_dados = input()
+semana = leitura_de_dados.split()
+contador = 0
+dias = 0 
+dias_acima_da_media = 0
+
+while dias < len(semana):
+  semana[dias] = int(semana[dias])
+  dias += 1
+
+media = ((semana[0]) + (semana[1]) + (semana[2]) + (semana[3]) + (semana[4]) + (semana[5]) + (semana[6])) / 7
+
+while contador < len(semana):
+  if semana[contador] > media:
+    dias_acima_da_media += 1
+  contador += 1
+
+print(dias_acima_da_media)
