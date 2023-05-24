@@ -1,0 +1,8 @@
+def positive_or_negative(a):
+  if a > 0:
+    return "P"
+  else:
+    return "N"
+
+n = int(input())
+print(positive_or_negative(n))
