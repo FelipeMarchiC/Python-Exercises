@@ -1,0 +1,32 @@
+
+N = int(input())
+X = int(input())
+
+participantes = []
+salvos = []
+eliminado = 0
+eliminados = 0
+
+i = 1
+while i < N + 1:
+  participantes.append(i)
+  i += 1
+
+j = True
+while len(participantes) != 1:
+  k = 0
+  while k < len(participantes):
+    if j == True:
+      salvos.append(participantes[k])
+      j = False
+    else:
+      j = True
+      eliminados += 1
+      if eliminados == X:
+        eliminado = participantes[k]
+    k += 1
+  participantes = salvos
+  salvos = []
+
+print(f"Eliminação Nº{X}: {eliminado}")
+print(f"Ganhador: {participantes[0]}")
