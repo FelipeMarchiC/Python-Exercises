@@ -1,0 +1,16 @@
+N_original = int(input())
+numero = N_original
+resto = 0
+reverso = 0 
+
+if N_original == 0:
+ print("S")
+
+while numero != 0:
+  resto = numero % 10
+  reverso = reverso * 10 + resto
+  numero = numero // 10
+  if N_original == reverso:
+    print("S")
+  elif numero == 0:
+   print("N")
