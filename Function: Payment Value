@@ -1,0 +1,19 @@
+def valuePayment(amount, delay):
+  if delay != 0:
+    amount = amount * (1.03 + 0.01 * delay)
+    return amount
+  else:
+    return amount
+    
+print("Insert the value of the payment and the delay right after! To exit the program, insert 0 on the value of any payment.")
+
+total_payment = 0
+
+while True:
+  amount = float(input("Payment amount: "))
+  if amount == 0:
+    break
+  delay = int(input("Days of payment delay: "))
+  amount = valuePayment(amount, delay)
+  total_payment += amount
+  print(f"The value to pay is: {amount:.2f}")
