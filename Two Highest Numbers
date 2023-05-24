@@ -1,0 +1,26 @@
+conjunto = int(input())
+
+contador = conjunto
+numero = 0
+maior_numero = 0
+segundo_maior_numero = 0
+
+
+while contador > 0:
+  numero = int(input())
+  if contador == conjunto or contador + 1 == conjunto:
+    if contador == conjunto:
+      maior_numero = numero - 1
+    if contador + 1 == conjunto:
+      segundo_maior_numero = numero - 1
+    
+  if numero >= segundo_maior_numero:
+    segundo_maior_numero = numero
+    if numero > maior_numero:
+      segundo_maior_numero = maior_numero
+      maior_numero = numero
+    
+  contador -= 1
+
+print(maior_numero)
+print(segundo_maior_numero)
