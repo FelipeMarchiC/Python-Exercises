@@ -1,0 +1,10 @@
+N = int(input())
+lista_A = list(map(int, input().split()))
+lista_B = list(map(int, input().split()))
+lista_resultados_C = []
+
+i = 0
+while i < N:
+  lista_resultados_C.append(lista_A[i] + lista_B[i])
+  print(lista_resultados_C[i], end=' ')
+  i += 1
