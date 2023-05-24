@@ -1,0 +1,10 @@
+def sumTaxes(tax, cost):
+  tax = tax / 100 + 1
+  cost = cost * tax
+  return cost
+
+tax = float(input())
+cost = float(input())
+
+cost = sumTaxes(tax, cost)
+print(f"{cost:.2f}")
