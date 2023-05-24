@@ -1,0 +1,8 @@
+N = int(input())
+valores = input()
+lista = valores.split()
+contador = 0
+
+while contador < N:
+  print(lista[contador], end=' ')
+  contador += 1
