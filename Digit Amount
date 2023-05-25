@@ -1,0 +1,12 @@
+def digit_amount(number):
+  digits = 1
+  while True:
+    if number // 10 != 0:
+      number = number // 10
+      digits += 1
+    else:
+      return digits
+
+number = int(input())
+digits = digit_amount(number)
+print(digits)
