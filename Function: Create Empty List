@@ -1,0 +1,6 @@
+def create_empty_list():
+  list = []
+  return list
+
+list = create_empty_list()
+print(list)
