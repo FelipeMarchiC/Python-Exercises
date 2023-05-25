@@ -1,0 +1,11 @@
+def number_finder(list, element):
+  for i in range(len(list)):
+    if list[i] == element:
+      return i
+  return -1
+
+list = list(map(int, input().split()))
+element = int(input())
+
+element_index = number_finder(list, element)
+print(element_index)
