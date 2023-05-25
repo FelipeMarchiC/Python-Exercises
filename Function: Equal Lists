@@ -1,0 +1,12 @@
+def list_comparison(list1, list2):
+  if len(list1) != len(list2):
+    return False
+  for i in range(len(list1)):
+    if list1[i] != list2[i]:
+      return False
+  return True
+
+list1 = list(map(int, input().split()))
+list2 = list(map(int, input().split()))
+equal_lists = list_comparison(list1, list2)
+print(equal_lists)
