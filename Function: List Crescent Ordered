@@ -1,0 +1,9 @@
+def check_list_ordered(list):
+  for i in range(len(list) - 1):
+    if list[i + 1] < list[i]:
+      return False
+  return True
+
+list = list(map(int, input().split()))
+list_is_ordered = check_list_ordered(list)
+print(list_is_ordered)
