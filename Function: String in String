@@ -1,0 +1,17 @@
+def string_in_string(string1, string2):
+  if len(string2) > len(string1):
+    return False
+    
+  for i in range(len(string1)):
+    if (len(string1) - i) >= len(string2):
+      if string1[i] == string2[0]:
+        for k in range(len(string2)):
+          if string2[k] != string1[k + i]:
+            break
+          return True    
+  return False
+
+string1 = input()
+string2 = input()
+is_string2_in_string1 = string_in_string(string1, string2)
+print(is_string2_in_string1)
