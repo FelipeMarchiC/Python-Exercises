@@ -1,0 +1,17 @@
+def identity_matrix(N):
+  matrix = []
+  k = 0
+  for i in range(N):
+    linha = []
+    for j in range(N):
+      if k == i and k == j:
+        linha.append(1)
+        k += 1
+      else:
+        linha.append(0)
+    matrix.append(linha)
+  return matrix
+
+N = int(input())
+matrix = identity_matrix(N)
+print(matrix)
