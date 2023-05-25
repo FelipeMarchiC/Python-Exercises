@@ -1,0 +1,13 @@
+def create_matrix(N, M):
+  matrix = []
+  for i in range(N):
+    linha = []
+    for j in range(M):
+      linha.append(0)
+    matrix.append(linha)
+  return matrix
+
+N = int(input())
+M = int(input())
+
+matrix = create_matrix(N, M)
