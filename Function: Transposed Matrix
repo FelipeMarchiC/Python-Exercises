@@ -1,0 +1,27 @@
+def create_matrix(N, M, elements):
+  matrix = []
+  k = 0
+  for i in range(N):
+    linha = []
+    for j in range(M):
+      linha.append(elements[k])
+      k += 1
+    matrix.append(linha)
+  return matrix
+
+def transposed_matrix(matrix):
+  transposed_matrix = []
+  for i in range(len(matrix[0])):
+    line = []
+    for j in range(len(matrix)):
+      line.append(matrix[j][i])
+    transposed_matrix.append(line)
+  return transposed_matrix
+
+N = int(input())
+M = int(input())
+elements = list(map(int, input().split()))
+matrix = create_matrix(N, M, elements)
+
+transposed_matrix = transposed_matrix(matrix)
+print(transposed_matrix)
