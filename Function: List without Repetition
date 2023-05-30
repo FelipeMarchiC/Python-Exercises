@@ -5,6 +5,7 @@ def no_repetition_list(list):
     for j in range(len(list2)):
       if list[i] == list2[j]:
         append = False
+        break
     if append == True:
       list2.append(list[i])
   return list2
