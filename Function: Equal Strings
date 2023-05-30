@@ -1,0 +1,12 @@
+def equal_strings(string1, string2):
+  if len(string1) != len(string2):
+    return False
+  for i in range(len(string1)):
+    if string1[i] != string2[i]:
+      return False
+  return True
+
+string1 = input()
+string2 = input()
+are_strings_equal = equal_strings(string1, string2)
+print(are_strings_equal)
