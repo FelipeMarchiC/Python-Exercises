@@ -1,0 +1,14 @@
+def no_repetition_list(list):
+  list2 = []
+  for i in range(len(list)):
+    append = True
+    for j in range(len(list2)):
+      if list[i] == list2[j]:
+        append = False
+    if append == True:
+      list2.append(list[i])
+  return list2
+
+list = list(map(int, input().split()))
+list2 = no_repetition_list(list)
+print(list2)
