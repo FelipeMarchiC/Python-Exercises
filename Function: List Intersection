@@ -1,0 +1,19 @@
+def list_intersection(list1, list2):
+  intersection = []
+  for i in range(len(list1)):
+    append = True
+    for j in range(len(list2)):
+      if list1[i] == list2[j]:
+        for k in range(len(intersection)):
+          if list1[i] == intersection[k]:
+            append = False
+            break
+        if append == True:
+          intersection.append(list1[i])
+        break
+  return intersection
+
+list1 = list(map(int, input().split()))
+list2 = list(map(int, input().split()))
+intersection = list_intersection(list1, list2)
+print(intersection)
