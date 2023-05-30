@@ -1,0 +1,17 @@
+def in_fibonacci(number):
+  fibonacci = False
+  j = 1
+  i = 0
+  fibo = 0
+  while number >= fibo:
+    if fibo == number:
+      fibonacci = True
+      break
+    fibo = i + j
+    i = j
+    j = fibo
+  return fibonacci
+
+number = int(input())
+is_number_in_fibonacci = in_fibonacci(number)
+print(is_number_in_fibonacci)
