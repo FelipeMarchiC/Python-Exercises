@@ -1,0 +1,31 @@
+def create_matrix(N, M, elements):
+  matrix = []
+  k = 0
+  for i in range(N):
+    linha = []
+    for j in range(M):
+      linha.append(elements[k])
+      k += 1
+    matrix.append(linha)
+  return matrix
+
+def magical_square(matrix):
+  lines_sum = 0
+  columns_sum = 0
+  diagonal_sum = 0
+  for i in range(len(matrix)):
+    for j in range(len(matrix)):
+      diagonal_sum += matrix[i][i]
+      lines_sum += matrix[i][j]
+      columns_sum += matrix[j][i]
+  if lines_sum == columns_sum and lines_sum == diagonal_sum:
+    return True
+  else:
+    return False
+      
+N = int(input())
+M = int(input())
+elements = list(map(int, input().split()))
+matrix = create_matrix(N, M, elements)
+is_matrix_magical_square = magical_square(matrix)
+print(is_matrix_magical_square) 
