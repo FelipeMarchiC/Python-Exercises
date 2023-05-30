@@ -1,0 +1,17 @@
+def is_prime_number(number):
+  i = 2
+  while i < number:
+    if number % i == 0:
+      return False
+    i += 1
+  return True
+    
+def is_list_of_only_prime_numbers(list):
+  for i in range(len(list)):
+    if is_prime_number(list[i]) == False:
+      return False
+  return True
+
+list = list(map(int, input().split()))
+is_list_of_prime_numbers_only = is_list_of_only_prime_numbers(list)
+print(is_list_of_prime_numbers_only)
