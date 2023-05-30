@@ -1,0 +1,20 @@
+def unique_number_average(list):
+  list_average = []
+  for i in range(len(list)):
+    append = True
+    for j in range(len(list_average)):
+      if list[i] == list_average[j]:
+        append = False
+        break
+    if append == True:
+      list_average.append(list[i])
+      
+  average = 0
+  for i in range(len(list_average)):
+    average += list_average[i]
+  average = average / len(list_average)
+  return average
+
+list = list(map(int, input().split()))
+average = unique_number_average(list)
+print(average)
