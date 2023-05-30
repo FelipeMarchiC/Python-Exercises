@@ -1,0 +1,11 @@
+def palindrome(string):
+  palindrome = True
+  for i in range(len(string)//2):
+    if string[i] != string[len(string) - 1 - i]:
+      palindrome = False
+      break
+  return palindrome
+
+string = input()
+is_palindrome = palindrome(string)
+print(is_palindrome)
